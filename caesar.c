@@ -10,9 +10,17 @@ int main(void)
 
     for (int i = 0; i < strlen(text); i++)
     {
-
-        printf("%d", text[i] + key);
+        if (text[i] == ' ')
+        {
+        printf("%c", text[i]);
         printf(" ");
+        }
+        else
+        {
+        printf("%c", text[i] + key);
+        printf(" ");
+        }
+        // printf(" ");
     }
     printf("\n");
 }
