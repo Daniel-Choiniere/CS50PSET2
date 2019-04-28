@@ -2,27 +2,41 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+// int main(void)
+
+// {
+//     string text = "Hello World";
+//     int key = get_int("Enter a whole number as a key for the cipher:");
+
+//     for (int i = 0; i < strlen(text); i++)
+//     {
+//         if (text[i] == ' ')
+//         {
+//         printf("%c", text[i]);
+//         printf(" ");
+//         }
+//         else
+//         {
+//         printf("%c", text[i] + key);
+//         printf(" ");
+//         }
+//         // printf(" ");
+//     }
+//     printf("\n");
+// }
+
+
+int main(int argc, string argv[])
 
 {
-    string text = "Hello World";
     int key = get_int("Enter a whole number as a key for the cipher:");
 
-    for (int i = 0; i < strlen(text); i++)
+    for (int i = 1; i < argc; i++)
     {
-        if (text[i] == ' ')
+        for (int j = 0, n = strlen(argv[i]); j < n; j++)
         {
-        printf("%c", text[i]);
-        printf(" ");
+            printf("%c", argv[i][j] + key);
         }
-        else
-        {
-        printf("%c", text[i] + key);
-        printf(" ");
-        }
-        // printf(" ");
     }
     printf("\n");
 }
-
-
