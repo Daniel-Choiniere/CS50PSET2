@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -17,7 +18,12 @@ int main(int argc, string argv[])
     {
         if( (text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <='Z'))
         {
-            printf("%c", text[i] + key);
+            char encryptedChar = text[i] + key;
+
+            if (text[i] )
+
+            // printf("%c", encryptedChar);
+            // printf("%c", text[i] + key);
         }
         else
         {
@@ -30,3 +36,9 @@ int main(int argc, string argv[])
 
 
 
+// char c = s[i] + key;
+// if s[i] is a lowercase letter
+//     if c > 'z'
+//         c = 'a' + c -'z' -1
+// else if s[ i ] is upper case letter
+//     . . .
