@@ -68,7 +68,18 @@ int main(int argc, string argv[])
 
 int shift(char c)
 {
-    int converted = c - 65;
-    printf("%i\n", converted);
+    int converted = c;
+    if (islower(c))
+    {
+        converted = converted - 97;
+        // printf("%i\n", converted);
+        return converted;
+    }
+    if (isupper(c))
+    {
+        converted = converted - 65;
+        // printf("%i\n", converted);
+        return converted;
+    }
     return converted;
 }
