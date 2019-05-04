@@ -22,7 +22,7 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    printf("success\n");
+    // printf("success\n");
 
     // int key = atoi(argv[1]);
     // string text = get_string("plaintext: ");
@@ -60,9 +60,15 @@ int main(int argc, string argv[])
     //     }
     // }
     // printf("\n");
+    int key = shift(argv[1][0]);
+    printf("%i\n", key);
 }
 
-// int shift(char c)
-// {
-//   // TODO
-// }
+
+
+int shift(char c)
+{
+    int converted = c - 65;
+    printf("%i\n", converted);
+    return converted;
+}
