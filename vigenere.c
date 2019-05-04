@@ -8,19 +8,22 @@ int shift(char c);
 
 int main(int argc, string argv[])
 {
-     if (argc == 1 || argc > 2)
+     // next two if statements check to see if the user command line input is a single string of alphabetical characters
+    if (argc == 1 || argc > 2)
     {
         printf("Usage: ./vigenere keyword\n");
         return 1;
     }
-
-
-    if (!(isalpha(argv[1][0])))
+    for (int i = 0; i < strlen(argv[1]); i++)
     {
-        printf("Usage: ./vigenere keyword\n");
-        return 1;
+        if (!(isalpha(argv[1][i])))
+        {
+            printf("Usage: ./vigenere keyword\n");
+            return 1;
+        }
+        printf("success\n");
     }
-    printf("success\n");
+
 
     // int key = atoi(argv[1]);
     // string text = get_string("plaintext: ");
@@ -60,7 +63,7 @@ int main(int argc, string argv[])
     // printf("\n");
 }
 
-int shift(char c)
-{
-   // TODO
-}
+// int shift(char c)
+// {
+//   // TODO
+// }
