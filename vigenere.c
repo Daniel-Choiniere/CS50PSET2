@@ -4,12 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
-// if( isalpha(var1) ) {
-//       printf("var1 = |%c| is an alphabet\n", var1 );
-//   } else {
-//       printf("var1 = |%c| is not an alphabet\n", var1 );
-//   }
-
+int shift(char c);
 
 int main(int argc, string argv[])
 {
@@ -63,4 +58,9 @@ int main(int argc, string argv[])
     //     }
     // }
     // printf("\n");
+}
+
+int shift(char c)
+{
+   // TODO
 }
