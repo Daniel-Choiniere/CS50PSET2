@@ -71,15 +71,11 @@ int shift(char c)
     int converted = c;
     if (islower(c))
     {
-        converted = converted - 97;
-        // printf("%i\n", converted);
-        return converted;
+        converted -= 97;
     }
     if (isupper(c))
     {
-        converted = converted - 65;
-        // printf("%i\n", converted);
-        return converted;
+        converted -= 65;
     }
     return converted;
 }
