@@ -21,9 +21,8 @@ int main(int argc, string argv[])
             printf("Usage: ./vigenere keyword\n");
             return 1;
         }
-        printf("success\n");
     }
-
+    printf("success\n");
 
     // int key = atoi(argv[1]);
     // string text = get_string("plaintext: ");
