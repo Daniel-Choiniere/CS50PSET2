@@ -23,8 +23,8 @@ int main(int argc, string argv[])
         }
     }
 
-    // for ()
-    int key = shift(argv[1][0]);
+
+
     // printf("%i\n", key);
 
     string text = get_string("plaintext: ");
@@ -35,6 +35,7 @@ int main(int argc, string argv[])
         // check to see if each character is alpha, if not it will just be printed without encryption at the final else statement
         if (isalpha(text[i]))
         {
+            int key = shift(argv[1][i]);
             // check to see if the character is lower case or uppercase and do some logic to each
             if (islower(text[i]))
             {
@@ -47,7 +48,6 @@ int main(int argc, string argv[])
                 printf("%c", encryptedChar);
             }
         }
-
         // if character is a special symbol and not alpha the character will just be printed as is without encryption
         else
         {
@@ -57,7 +57,6 @@ int main(int argc, string argv[])
     printf("\n");
 
 }
-
 
 
 int shift(char c)
