@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 int shift(char c);
 
 int main(int argc, string argv[])
