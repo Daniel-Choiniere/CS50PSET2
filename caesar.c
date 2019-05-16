@@ -20,12 +20,10 @@ int main(int argc, string argv[])
         // check to see if each character is alpha, if not it will just be printed without encryption at the final else statement
         if ((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z'))
         {
-
             // subtract 'a' from your original lower-case char
             // then add the key
             // then take %26 of the result
             // then add 'a' back again
-
             // check to see if the character is lower case or uppercase and do some logic to each
             if (islower(text[i]))
             {
@@ -39,7 +37,6 @@ int main(int argc, string argv[])
                 printf("%c", encryptedChar);
             }
         }
-
         // if character is a special symbol and not alpha the character will just be printed as is without encryption
         else
         {
